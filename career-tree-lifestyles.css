@@ -1,0 +1,168 @@
+@media screen and (max-width: 1079px) {
+    .nav-bar {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        font-size: 0.75em;
+    }
+}
+
+@media screen and (max-width: 220px) {
+    body {
+        font-size: 0.5em;
+    }
+}
+
+@media screen and (max-width: 100px) {
+    body {
+        font-size: 0.25em;
+    }
+}
+
+body {
+    background-color: rgb(22, 22 ,22);
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+/*.title-banner is the background while .title is the h1 element*/
+.title-banner {
+    background-image: linear-gradient(to bottom right, rgb(0, 48, 255), rgb(0, 178, 190));
+    width: 90%;
+    height: auto;
+    margin: auto;
+    border-style: none;
+    border-radius: 0% 0% 10px 10px;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.title {
+    margin: 0%;
+    color: white;
+    font-size: 4em;
+    padding: 2%;
+    text-shadow: 1px 1px 5px black;
+}
+
+.title:hover {
+    cursor: default;
+}
+
+
+/*.nav-bar is the container for all the .nav-item elements*/
+.nav-bar {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: rgb(60, 255, 0);
+    font-size: 1.5em;
+    margin-top: 3%;
+}
+
+.nav-item:hover {
+    text-decoration: underline white;
+}
+
+/*CSS for the paragraph that explains what this website is*/
+.summary {
+    background-color: white;
+    border-style: solid;
+    border-color: rgb(0, 178, 190);
+    border-width: 5px;
+    border-radius: 10px;
+    width: 70%;
+    margin: auto;
+    margin-top: 5%;
+    padding: 2%;
+    font-size: 1.2em;
+}
+
+/*these are all the properties for the 3 cards and all the information in it.*/
+.cards-flexbox {
+    width: 90%;
+    margin: auto;
+    margin-top: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    background-color: white;
+    width: 30%;
+    border-radius: 10px;
+    margin-bottom: 10%
+}
+
+@media screen and (max-width: 1005px) {
+    .cards-flexbox {
+        width: 90%;
+        margin: auto;
+        margin-top: 10%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .flex-item {
+        width: 100%;
+    }
+}
+
+.item-label {
+    background-image: linear-gradient(to bottom left, rgb(0, 48, 255), rgb(0, 178, 190));
+    width: 100%;
+    border-style: none;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-color: rgb(60, 255, 0);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+
+.item-label-text {
+    margin: 0%;
+    font-family: 'Nunito', sans-serif;
+    color: rgb(60, 255, 0);
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.paragraph {
+    line-height: 2em;
+    font-size: 1.5em;
+    padding: 10%;
+}
+
+/*Footer*/
+.end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+    background-image: linear-gradient(to bottom right, rgb(0, 48, 255), rgb(0, 178, 190));
+    border-style: none;
+    border-radius: 10px 10px 0px 0px;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+}
